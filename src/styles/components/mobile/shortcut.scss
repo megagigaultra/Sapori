@@ -1,0 +1,22 @@
+.shortcut{
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    .circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        width: 55px;
+        margin-right: 5px;
+        border-radius: 100%;
+        background-color: $orange;
+        .fork{
+            width: 52%;
+            path{
+                fill: $black;
+            }
+        }
+    }
+}

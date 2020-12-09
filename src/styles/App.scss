@@ -1,0 +1,128 @@
+//GOOGLE FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+
+//LOCAL FONTS
+@font-face {
+  font-family: "Allegory";
+  src: url("../assets/fonts/Allegory/AllegoryDisplay.otf");
+}
+@font-face {
+  font-family: "Allegory-Bold";
+  src: url("../assets/fonts/Allegory/AllegoryDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "Bigilla";
+  src: url("../assets/fonts/Bigilla/Bigilla-Bold.otf");
+}
+@font-face {
+  font-family: "Jt Marnie";
+  src: url("../assets/fonts/JtMarnie/jtmarnie-light-webfont.woff");
+}
+@font-face {
+  font-family: "GeorgiaScript";
+  src: url("../assets/fonts/GeorgiaScript/GeorgiaScript.ttf");
+}
+@font-face {
+  font-family: "Archia";
+  src: url("../assets/fonts/Archia/Webfont/archia-regular-webfont.ttf");
+}
+
+
+
+// SCSS IMPORT
+@import "./colors.scss";
+@import "./breakpoints.scss";
+@import "./components/mobile/navigation.scss";
+@import "./components/mobile/herohome.scss";
+@import "./components/mobile/heromenu.scss";
+@import "./components/mobile/calltoaction.scss";
+@import "./components/mobile/menu.scss";
+@import "./components/mobile/menulist.scss";
+@import "./components/mobile/address.scss";
+@import"./components/mobile/time.scss";
+@import "./components/mobile/footer.scss";
+@import "./components/mobile/scrolltop.scss";
+@import "./components/mobile/shortcut.scss";
+@import "./components/mobile/dot.scss";
+
+// GLOBAL SCSS
+body,
+html{
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    background-color: $black;
+    color: $white;
+    box-sizing: border-box;
+    font-family: 'Jt Marnie', sans-serif;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.bodynoscroll{
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  .row {
+    display: flex;
+    padding: 0 80px;
+    @include media("<=2100px") {
+      padding: 0 50px;
+    }
+    @include media("<=phone") {
+      padding: 0 20px;
+    }
+    
+  }
+}
+
+.page{
+  width: 100%;
+  overflow: hidden;
+}
+
+.index-5{
+  z-index: -5;
+}
+.index0{
+  z-index: 0;
+}
+.index5{
+  z-index: 5;
+}
+.index10{
+  z-index: 10;
+}
+.index15{
+  z-index: 15;
+}
+.index20{
+  z-index: 20;
+}
+.index25{
+  z-index: 25;
+}
+.index30{
+  z-index: 30;
+}
+.index35{
+  z-index: 35;
+}
+.index40{
+  z-index: 40;
+}
+.index45{
+  z-index: 45;
+}
+.index50{
+  z-index: 50;
+}

@@ -1,0 +1,27 @@
+.menu-mb{
+    visibility: hidden;
+    .content{
+        margin: 4vh 0;
+        .item{
+            .title{
+                font-size: 1.8rem;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .detail{
+                margin: 0;
+                font-size: .9rem;
+                color: $greylight;
+            }
+            .price{
+                display: inline-block;
+                width: 100%;
+                font-family: 'Montserrat', sans-serif;
+                text-align: right;
+                font-size: 1.2rem;
+                color: $greylight;
+            }
+        }
+    }
+}

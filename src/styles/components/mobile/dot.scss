@@ -1,0 +1,12 @@
+.dot-mb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    .dot{
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        /* background-color: $white; */
+    }
+}

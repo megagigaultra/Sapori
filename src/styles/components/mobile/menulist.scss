@@ -1,0 +1,91 @@
+.menulist-mb{
+    position: fixed;
+    top: -1%;
+    left: 0;
+    height: 102%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    .menulist-cross{
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 35px;
+        right: 40px;
+        height: 45px;
+        width: 45px;
+        background-color: $white;
+        border-radius: 100%;
+        transform: rotate(45deg);
+        .crossbar{
+            background-color: $black;
+        }
+        .crossbar-h{
+            height: 2px;
+            width: 55%;
+        }
+        .crossbar-v{
+            position: absolute;
+            height: 55%;
+            width: 2px;
+        }
+    }
+    .list-backcover{
+        position: fixed;
+        top: -5vh;
+        width: 100%;
+        height: 0;
+        background-color: $black;
+    }
+    .list-shadow{
+        pointer-events: none;
+        opacity: 1;
+        position: fixed;
+        bottom: 0;
+        height: 20vh;
+        width: 100%;
+        background: rgb(19,21,26);
+        background: linear-gradient(0deg, 
+        rgba(19,21,26,1) 0%,
+        rgba(19,21,26,.6) 50%,
+        rgba(19,21,26,0) 100%);
+    }
+    .items-container{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 120px 0 80px;
+        .menulist-items{
+            text-decoration: none;
+            .item-category{
+                opacity: 0;
+                font-family: 'Montserrat', sans-serif;
+                color: $red;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .item-title{
+                opacity: 0;
+                margin: 0;
+                font-size: 2.75rem;
+                letter-spacing: -2px;
+                line-height: 3.7rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+            }
+            .item-sample{
+                font-size: 1.3rem;
+                opacity: 0;
+                margin: .5rem 1rem 2rem 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                color: $greylight;
+            }
+        }
+    }
+}
