@@ -22,28 +22,28 @@ const HeroHome = () => {
         const pageHeight = window.innerHeight;
 
         gsap.fromTo(".intro", {
-            x: "20vh",
+            y: "10vh",
             autoAlpha: 0
         },
         {
-            x: 0,
+            y: 0,
             autoAlpha: 1,
             duration: 1.4,
-            delay: .8,
-            stagger: .15,
+            delay: 1.2,
+            stagger: .1,
             ease: 'expo.out'
         });
 
         gsap.fromTo(".content-arrow", {
-            x: "-8vh",
+            y: "10vh",
             autoAlpha: 0
         },
         {
-            x: 0,
+            y: 0,
             autoAlpha: 1,
-            duration: 1.7,
-            delay: 1.4,
-            ease: 'expo.inOut'
+            duration: 1.4,
+            delay: 1.8,
+            ease: 'expo.out'
         });
 
         gsap.fromTo(".hero-image", {
@@ -51,8 +51,8 @@ const HeroHome = () => {
         },
         {
             autoAlpha: 1,
-            delay: 1.2,
-            duration: 3,
+            delay: 2,
+            duration: 2.1,
             ease: "shine.Out"
         });
 

@@ -79,7 +79,7 @@ const Address = () => {
                 </div>
             </div>
             <div className="container address-info index20">
-                <p className="row address address-number">Adresse</p>
+                <p className="row address address-title">Adresse</p>
                 <div className="address">
                     <div className="row address-invitation">Passez nous voir</div>
                     <div className="row address-line">Rue Fraischamps 150</div>

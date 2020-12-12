@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Time = () => {
 
-    const timetitleRef = useRef(null);
     const timeimgRef = useRef(null);
     const timeimgContainerRef = useRef(null)
 
@@ -25,14 +24,14 @@ const Time = () => {
             autoAlpha: 1,
             scrollTrigger: {
                 trigger: ".time-mb",
-                start: `top ${pageHeight/1.6}`,
+                start: `top ${pageHeight/1.5}`,
                 toggleActions: 'play none none reverse'
             },
             duration: 1.1,
             ease: "expo.inOut"
         });
 
-        gsap.fromTo(".time-line", {
+        gsap.fromTo(".time", {
             x: "-10vh",
             autoAlpha: 0
         },
@@ -40,10 +39,11 @@ const Time = () => {
             x: 0,
             autoAlpha: 1,
             scrollTrigger: {
-                trigger: ".time-mb",
-                start: `top ${pageHeight/2.5}`,
+                trigger: ".time-background",
+                start: `top ${pageHeight/1.7}`,
                 toggleActions: 'play none none reverse'
             },
+            marker: true,
             stagger: .1,
             duration: 1.1,
             ease: 'expo.inOut'
@@ -61,11 +61,12 @@ const Time = () => {
                     </div>
                 </div>
             </div>
-            <div ref={timetitleRef} className="container time-info title">
-                <p className="row">Horaire</p>
-            </div>
-            <div className="container timetable">
-                
+            <div className="container time-info index20">
+                <p className="row time time-title">Horaire</p>
+                <div className="time">
+                    <div className="row time-week">Du lundi au samedi</div>
+                    <div className="row time-line">09:30 - 16:30</div>
+                </div>
             </div>
         </div>
     )

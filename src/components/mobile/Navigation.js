@@ -11,15 +11,15 @@ const Navigation = () => {
     useEffect(() => {
 
         gsap.fromTo(".logo-svg", {
-            y: -100,
+            y: 45,
             autoAlpha: 0
         },
         {
             autoAlpha: 1,
             y: 0,
             duration: 1,
-            delay: 1.8,
-            ease: "elastic.out(1.5, 1)"
+            delay: 1,
+            ease: 'expo.out'
         })
 
 },[])

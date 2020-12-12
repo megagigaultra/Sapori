@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## I Sapori Del Sud
 
-### `Technology used in this project`
+**Technology used in this project**
 
 - Node-sass
 - Gsap
