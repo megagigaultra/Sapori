@@ -42,7 +42,7 @@ const Address = () => {
             autoAlpha: 1,
             scrollTrigger: {
                 trigger: ".address-background",
-                start: `top ${pageHeight/1.3}`,
+                start: `top ${pageHeight/1.35}`,
                 toggleActions: 'play none none reverse'
             },
             stagger: .1,
